@@ -1,0 +1,32 @@
+<div class="search flex flex-row  flex-wrap" >
+
+
+  <div class="flex justify-content-center split">
+    <label for="basic">Check In</label>
+    <p-calendar (onSelect)="checarData()" [locale]="pt" inputId="basic" [(ngModel)]="date1" dateFormat="dd/mm/yy" ></p-calendar>
+</div>
+
+<div class="flex  justify-content-center split">
+  <label for="basic">Check Out</label>
+  <p-calendar (onSelect)="checarData()" [locale]="pt" inputId="basic" [(ngModel)]="date2" dateFormat="dd/mm/yy" ></p-calendar>
+</div>
+<div class="flex  justify-content-center split">
+<label for="basic">Noites</label>
+<input class="flex align-items-center justify-content-center"  id="disabled-input" type="text" pInputText [disabled]="disabled" [(ngModel)]="value5" />
+</div>
+<div class="flex  justify-content-center split">
+  <label for="minmax-buttons">Adultos</label>
+  <p-inputNumber [(ngModel)]="value20" mode="decimal" [showButtons]="true" inputId="minmax-buttons" [min]="0" [max]="100">
+  </p-inputNumber>
+</div>
+
+<div class="flex  justify-content-center split">
+  <label for="minmax-buttons">Crianças</label>
+  <p-inputNumber [(ngModel)]="value21" mode="decimal" [showButtons]="true" inputId="minmax-buttons" [min]="0" [max]="100">
+  </p-inputNumber>
+</div>
+
+<div class="flex justify-content-center split pt-4 ">
+<p-button class="flex align-items-center justify-content-center" label="Procurar " icon="pi pi-search" styleClass="p-button-lg" iconPos="right" [loading]="loading[1]" (onClick)="load(1)"></p-button>
+</div>
+</div>

@@ -1,0 +1,20 @@
+@import 'primeflex/primeflex.scss';
+@import '../../../config-scss/rem-calc.scss';
+
+
+.caroussel{
+  width: 100vw;
+  height: rem-calc(731);
+}
+.hoteis{
+  height: rem-calc(731);
+  max-width: rem-calc(1920);
+}
+.bckg{
+  height: rem-calc(731);
+  width: rem-calc(1920);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+

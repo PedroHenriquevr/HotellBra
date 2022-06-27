@@ -1,0 +1,41 @@
+@import '../../../config-scss/rem-calc.scss';
+
+.toolbar{
+  background-color: #1D1106;
+  height: rem-calc(90);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.toolbar div{
+  height: 100%;
+  width: 50%;
+
+}
+
+h1{
+
+  padding-left: rem-calc(40);
+
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 47px;
+
+color: #FFFFFF;
+
+}
+
+a{
+  padding-right: rem-calc(35);
+  cursor: pointer;
+}
+
+:host ::ng-deep .p-sidebar{
+  background: #58412B !important;
+}
+
+
