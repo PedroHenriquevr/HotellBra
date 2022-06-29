@@ -2,8 +2,9 @@
 @import './config-scss/variables.scss';
 @import './config-scss/reset.scss';
 @import './config-scss/rem-calc.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
-
-html{
+html {
   overflow-x: hidden;
 }

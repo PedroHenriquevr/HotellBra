@@ -1,51 +1,48 @@
 @import '../../../config-scss/rem-calc.scss';
 @import '../../../config-scss/rem-calc.scss';
 
-.search{
+.search {
   background-color: #1D1106;
-  height:100%;
+  height: 100%;
   min-height: rem-calc(123);
   width: 100vw;
   max-height: fit-content;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
 }
+
 .search ::before ::after {
   box-sizing: border-box;
 }
 
-:host ::ng-deep .p-button{
+:host ::ng-deep .p-button {
   background-color: #58412B !important;
-  border-color:#2f1d0b;
+  border-color: #2f1d0b;
   border: #2f1d0b;
   background: #2f1d0b;
- }
-.split{
+}
+
+.split {
   display: flex;
   flex-direction: column;
   text-align: left;
   padding: rem-calc(10);
 }
-.split label{
+
+.split label {
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding-bottom: rem-calc(7);
 }
 
-:host ::ng-deep .p-datepicker .p-datepicker-header{
-  button{
-    color: white!important;
+:host ::ng-deep .p-datepicker .p-datepicker-header {
+  button {
+    color: white !important;
   }
-  background: #9D8166!important;
+
+  background: #9D8166 !important;
 
 }
-
-
-
-
-
-
-

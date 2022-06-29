@@ -1,6 +1,6 @@
 @import '../../../config-scss/rem-calc.scss';
 
-.toolbar{
+.toolbar {
   background-color: #1D1106;
   height: rem-calc(90);
   width: 100vw;
@@ -9,33 +9,88 @@
   justify-content: space-evenly;
 }
 
-.toolbar div{
+.toolbar div {
   height: 100%;
   width: 50%;
 
 }
 
-h1{
-
+#logo {
   padding-left: rem-calc(40);
+}
 
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 47px;
+h1 {
 
-color: #FFFFFF;
+  padding-left: rem-calc(30);
+
+  height: 100%;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 40px;
+  line-height: 47px;
+
+  color: #FFFFFF;
 
 }
 
-a{
+a {
   padding-right: rem-calc(35);
   cursor: pointer;
 }
 
-:host ::ng-deep .p-sidebar{
-  background: #58412B !important;
+:host ::ng-deep .p-sidebar {
+  background: #1D1106 !important;
+
+  .p-sidebar-header {
+    justify-content: flex-start;
+  }
+
+  .conteudo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+  }
+
+
 }
 
 
+
+
+button {
+
+  color: #FFFFFF;
+
+
+  margin-top: rem-calc(20);
+
+  width: rem-calc(245);
+  height: rem-calc(60);
+
+  background: #9D8166;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+  cursor: pointer;
+
+  img {
+    margin-right: rem-calc(7);
+    margin-left: rem-calc(18);
+
+    filter: invert(1);
+  }
+
+  p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

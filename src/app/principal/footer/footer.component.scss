@@ -1,0 +1,19 @@
+@import '../../../config-scss/rem-calc.scss';
+
+.footer {
+  background-color: #1D1106;
+  height: rem-calc(110);
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+
+  #logoSite {
+    margin-left: rem-calc(29);
+  }
+
+  #logoPV {
+    filter: invert(1);
+    margin-right: rem-calc(29);
+  }
+
+}

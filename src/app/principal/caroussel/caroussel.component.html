@@ -1,16 +1,16 @@
 <div class="caroussel">
-<p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [numVisible]="5" [containerStyle]="{'width': '100%', 'height': '100%'}"
-    [circular]="true" [showItemNavigators]="true" [showThumbnails]="false" [showIndicators]="true" [showItemNavigatorsOnHover]="true"
-    [showIndicatorsOnItem]="true">
-    <ng-template pTemplate="item" let-item >
+  <p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [numVisible]="5"
+    [containerStyle]="{'width': '100%', 'height': '100%'}" [circular]="true" [showItemNavigators]="true"
+    [showThumbnails]="false" [showIndicators]="true" [showItemNavigatorsOnHover]="true" [showIndicatorsOnItem]="true">
+    <ng-template pTemplate="item" let-item>
       <span class="bckg" [ngStyle]="{'background-image': 'url('+ item.thumbnailImageSrc +')'}">
       </span>
     </ng-template>
     <ng-template pTemplate="thumbnail" let-item>
-        <div class="grid grid-nogutter justify-content-center" >
-        </div>
+      <div class="grid grid-nogutter justify-content-center">
+      </div>
     </ng-template>
-</p-galleria>
+  </p-galleria>
 </div>
 
 <!-- LUCAS PICA AJUDOU NO CÓDIGO -->

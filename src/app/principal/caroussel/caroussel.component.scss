@@ -2,19 +2,20 @@
 @import '../../../config-scss/rem-calc.scss';
 
 
-.caroussel{
+.caroussel {
   width: 100vw;
   height: rem-calc(731);
 }
-.hoteis{
+
+.hoteis {
   height: rem-calc(731);
   max-width: rem-calc(1920);
 }
-.bckg{
+
+.bckg {
   height: rem-calc(731);
   width: rem-calc(1920);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-

@@ -1,12 +1,35 @@
 <div class="toolbar">
-<div class="flex flex-row  flex-wrap ">
+  <div class="flex flex-row flex-wrap ">
+    <img id="logo" src="../../../assets/icons/HotelBra 1.svg" alt="">
     <h1 class="flex align-items-center justify-content-center">HotelBra</h1>
 
-</div>
-<div class="flex flex-row-reverse flex-wrap">
-  <a class="flex align-items-center justify-content-center" (click)="visibleSidebar2 = true" ><img  src="../../../assets/Group 1.svg" alt="hamburguer" ></a>
-</div>
-<p-sidebar class="color_side" [(visible)]="visibleSidebar2" position="right" [baseZIndex]="10000">
-  <h1 style="font-weight:normal">Right Sidebar</h1>
+  </div>
+  <div class="flex flex-row-reverse flex-wrap">
+    <a class="flex align-items-center justify-content-center" (click)="visibleSidebar2 = true"><img
+        src="../../../assets/icons/Group 1.svg" alt="hamburguer"></a>
+  </div>
+  <p-sidebar class="color_side" [(visible)]="visibleSidebar2" position="right" [baseZIndex]="10000">
+
+    <div class="conteudo flex flex-column">
+      <img class="flex align-items-center justify-content-center" id="logoSide"
+        src="../../../assets/icons/HotelBra 2.svg" alt="">
+      <button class="flex align-items-center justify-content-start" type="button">
+        <img src="../../../assets/icons/hotel-solid-24 1.svg" alt="">
+        <p>Hoteis</p>
+      </button>
+      <button class="flex align-items-center justify-content-start" type="button">
+        <img src="../../../assets/icons/plane-take-off-solid-24 1.svg" alt="">
+        <p>Voos</p>
+      </button>
+      <button class="flex align-items-center justify-content-start" type="button">
+        <img src="../../../assets/icons/info-circle-solid-24 1.svg" alt="">
+        <p>Informações</p>
+      </button>
+      <button class="flex align-items-center justify-content-start" type="button">
+        <img src="../../../assets/icons/envelope-solid-24 1.svg" alt="">
+        <p>Suporte</p>
+      </button>
+    </div>
+
   </p-sidebar>
 </div>

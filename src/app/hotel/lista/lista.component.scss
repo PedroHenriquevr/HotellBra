@@ -1,0 +1,169 @@
+@import '../../../config-scss/rem-calc.scss';
+
+
+
+
+
+.fundo {
+  background-color: #58412B;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.cards {
+
+  margin-top: rem-calc(80);
+  margin-bottom: rem-calc(40);
+
+  max-width: 100%;
+
+}
+
+.card {
+  max-width: 100%;
+  max-height: fit-content;
+  width: rem-calc(480);
+  height: rem-calc(700);
+
+  margin-left: rem-calc(40);
+  margin-right: rem-calc(40);
+
+  margin-bottom: rem-calc(20);
+
+
+  background-color: #1D1106;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+}
+
+
+img {
+  width: 100%;
+  max-height: rem-calc(490);
+  object-fit: contain;
+
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 23px 23px 0px 0px;
+}
+
+.conteudo {
+  margin: rem-calc(23) rem-calc(68) rem-calc(30) rem-calc(61);
+
+  .pi {
+    font-size: rem-calc(38);
+  }
+}
+
+hr {
+  border: 1px solid #FFFFFF;
+}
+
+#linha1 {
+  margin-bottom: rem-calc(17);
+}
+
+#linha2 {
+  margin-top: rem-calc(17);
+}
+
+p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem-calc(32);
+  line-height: rem-calc(39);
+
+  color: #FFFFFF;
+}
+
+h1 {
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem-calc(48);
+  line-height: rem-calc(58);
+
+  color: #FFFFFF;
+
+}
+
+
+.rate {
+  padding-bottom: rem-calc(7);
+  padding-top: rem-calc(15);
+
+  .pi {
+    margin-right: 5px;
+  }
+
+  p {
+    padding-left: rem-calc(15);
+  }
+}
+
+button {
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem-calc(32);
+  line-height: rem-calc(39);
+
+  color: #FFFFFF;
+
+
+  background: #58412B;
+  border-radius: 20px;
+  width: rem-calc(242);
+  height: rem-calc(52);
+  margin-right: rem-calc(24);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+
+    height: rem-calc(550);
+
+
+    h1 {
+      font-size: rem-calc(38);
+    }
+
+    .rate {
+
+      .pi {
+        font-size: rem-calc(16);
+      }
+
+      p {
+        padding-left: rem-calc(7);
+        font-size: 1rem;
+      }
+    }
+
+    p {
+      font-size: rem-calc(25);
+    }
+
+    button {
+      width: rem-calc(152);
+      height: rem-calc(30);
+      font-size: rem-calc(25);
+    }
+
+    #linha1 {
+      margin-bottom: rem-calc(8);
+    }
+
+    #linha2 {
+      margin-top: rem-calc(8);
+    }
+  }
+}
